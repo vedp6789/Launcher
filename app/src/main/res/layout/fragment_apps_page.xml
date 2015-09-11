@@ -1,0 +1,214 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gamesapp.fragment.AppsPageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/ll_app_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/a"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#d74137"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_app_icon1"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:id="@+id/tv_app_name1"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_weight="0.32"
+                            android:fontFamily="ChunkFive Regular"
+                            android:gravity="center"
+                            android:hint="@string/app_name"
+                            android:singleLine="false"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/b_play1"
+                            android:layout_width="90dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/button_play1_selector"
+                            android:gravity="center|center_vertical"
+                            android:text="@string/play"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_app_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/b"
+                android:gravity="center|center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffe57f"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/iv_app_icon2"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:id="@+id/tv_app_name2"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_weight="1.31"
+                            android:fontFamily="ChunkFive Regular"
+                            android:gravity="center"
+                            android:hint="@string/app_name"
+                            android:singleLine="false"
+                            android:text="2"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/b_play2"
+                            android:layout_width="90dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/button_play2_selector"
+                            android:text="@string/play"
+                             />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_app_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/c"
+                android:gravity="center|center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4fb4b0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/iv_app_icon3"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:id="@+id/tv_app_name3"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_weight="1.21"
+                            android:fontFamily="ChunkFive Regular"
+                            android:gravity="center"
+                            android:hint="@string/app_name"
+                            android:singleLine="false"
+                            android:text="3"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/b_play3"
+                            android:layout_width="90dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/button_play3_selector"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

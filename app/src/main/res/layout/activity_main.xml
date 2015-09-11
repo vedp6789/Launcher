@@ -1,0 +1,186 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ll_search_apps"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_search_apps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/search_app"
+                    android:textColorHint="#ffe56e"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_weight="13"
+                    android:background="@android:color/transparent"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/search_icon40"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/search_boarder"/>
+
+
+            />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_app_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:hint="@string/time"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/tv_label"
+                    android:layout_width="190dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_time"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:textSize="40sp"
+                    android:background="@drawable/games_text_selector"/>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_time"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="1dp"
+                    android:hint="@string/date"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_xyz"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_app_label"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:id="@+id/rl_apps_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/rl_app_label"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="5.0"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/apps_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.61" />
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/circle_pager_indicator"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.21"
+                        app:fillColor="#ffff00"
+                        app:pageColor="#ffffff"
+                        app:radius="@dimen/default_circle_indicator_radius"
+                        app:strokeColor="@color/default_circle_indicator_stroke_color"
+                        app:strokeWidth="@dimen/default_circle_indicator_stroke_width" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_website_launchers"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal"  >
+
+
+                    <Button
+                        android:id="@+id/b_eye_candy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/b_2_selector"/>
+
+                    <Button
+                        android:id="@+id/b_orthodontic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/b_1_selector"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

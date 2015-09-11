@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_app_list"
+    android:background="@drawable/on_selection">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/iv_app_icon"
+        android:layout_width="30dp"
+        android:layout_weight="1"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/app_icon2"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:layout_marginLeft="4dp"
+        android:id="@+id/tv_app_name"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="center_vertical"
+        />
+    <CheckBox
+        android:layout_marginRight="15dp"
+        android:id="@+id/cb_app_selection"
+        android:button="@drawable/checkbox_selector"
+        android:layout_toRightOf="@id/tv_app_name"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+</LinearLayout>
